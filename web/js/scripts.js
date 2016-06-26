@@ -12,3 +12,16 @@ function readURL(input) {
         reader.readAsDataURL(input.files[0]);
     }
 }
+
+$("button").click(function(){
+
+}
+
+    )
+$.ajax({
+  type: "POST",
+  url: "~/pythoncode.py",
+  data: { param: text}
+}).done(function( o ) {
+   // do something
+});
