@@ -12,7 +12,7 @@ function readURL(input) {
         reader.readAsDataURL(input.files[0]);
     }
 }
-
+/*
 $("button").click(function(){
 
 }
@@ -25,3 +25,4 @@ $.ajax({
 }).done(function( o ) {
    // do something
 });
+*/
