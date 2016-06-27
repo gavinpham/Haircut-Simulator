@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-import cgi, os
+import cgi, os, time
 import cgitb; cgitb.enable()
 
 try: # Windows needs stdio set for binary mode. IDK IF THIS IS NEEDED OR NOT
@@ -24,9 +24,14 @@ if fileitem.filename:
 else:
 	message = 'No file was uploaded'
 
+time.sleep(10)
+
 print """\
-Content-Type: text/html\n
+Content-Type: text/html; charset=utf-8\n
 <html><body>
+<img src="../output/2013-Korean-Hairstyle-for-guys.jpg" alt="Smiley face">
+<img src="../output/Asian-guys-haircuts.jpg" alt="Smiley face">
+<img src="../output/Asian-male-haircuts.jpg" alt="Smiley face">
 <p>%s</p>
 </body></html>
 """ % (message,)

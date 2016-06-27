@@ -17,5 +17,6 @@ while(1):
 			        print os_call
 			        os.system(os_call)
 
-			os.system("rm /Users/Gavin/facecheck/web/files/" + .jpg")
-	time.sleep(100)
+			os.system("rm /Users/Gavin/facecheck/web/files/" + face_img)
+	print ("Sleeping...")
+	time.sleep(5)
