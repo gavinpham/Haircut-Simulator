@@ -1,9 +1,17 @@
 <html>
 <title>Interactive Page</title>
 <body>
+	<!-- 
 <form method=POST action="cgi-bin/cgi101.py">
     <P><B>Enter your name:</B>
     <P><input type=text name=user>
     <P><input type=submit>
+</form>-->
+
+<form method=POST enctype="multipart/form-data" action="cgi-bin/cgi101.py" >
+<p>File: <input type="file" name="file"></p>
+<p><input type="submit" value="Upload"></p>
 </form>
-</body></html>
+
+</body>
+</html>
